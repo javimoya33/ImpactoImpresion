@@ -1,0 +1,142 @@
+/*----------------------------------------
+    13. Work CSS
+----------------------------------------*/
+@use "../abstract" as *;
+.bd-work{
+    &__80{
+        margin-top: -80px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &__item {
+        @include transition(0.5s);
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 40px 20px 38px 20px;
+        &:hover{
+            .bd-work__step {
+                transform: translateX(-140%);
+                opacity: 0;
+                visibility: hidden;
+            }
+            .bd-work__icon {
+                opacity: 1;
+                visibility: visible;
+                top: 40px;
+            }            
+            p, h3{
+                color: var(--clr-common-white);
+            }
+        }
+    }
+    &__icon{
+        position: absolute;
+        top: 40px;
+        @include transform(translateX(-50%));
+        opacity: 0;
+        @include transition(0.5s);
+	    visibility: hidden;
+        background: var(--clr-common-white);
+        padding: 21px 7px;
+        border-radius: 6px;
+        left: 50%;
+        width: 110px;
+        height: 110px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 60%;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -9px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 9px 10px 0 10px;
+            border-color: var(--clr-common-white) transparent transparent transparent;
+            right: 0;
+            text-align: center;
+            margin: auto;
+        }
+    }
+    &__step{
+        background: var(--clr-common-white);
+        text-align: center;
+        box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+        display: inline-block;
+        border-radius: 6px;
+        padding: 19px 25px 21px 25px;
+        position: relative;
+        margin-bottom: 42px;
+        position: absolute;
+        @include transition(0.5s);
+        left: 50%;
+        @include transform(translateX(-50%));
+        opacity: 1;
+	    visibility: visible;
+        width: 110px;
+        height: 110px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -9px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width:9px 10px 0 10px;
+            border-color: var(--clr-common-white) transparent transparent transparent;
+            right: 0;
+            text-align: center;
+            margin: auto;
+        }
+        h2 {
+            font-size: 50px;
+            color: var(--clr-theme-1);
+            font-family: $handlee;
+            line-height: 1;
+            margin-bottom: 0;
+        }
+        span {
+            line-height: 1;
+            display: block;
+        }
+    }
+    &__text{
+        margin-top: 150px;
+        p {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        h3 {
+            margin-bottom: 0;
+            @media #{$xl, $lg, $md, $sm, $xs} {
+                font-size: 20px;
+            }
+        }
+    }
+}
+.bd-work__item-wrapper{
+    .row {
+        .col-xl-3{
+            &:nth-child(even){
+                margin-top: 50px;
+                @media #{$lg, $md, $sm, $xs} {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

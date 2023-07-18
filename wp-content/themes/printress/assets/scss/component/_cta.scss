@@ -1,0 +1,65 @@
+/*----------------------------------------
+    17. CTA CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+.bd-cta__em{
+    &-btn {
+        .theme-btn{
+            &.red{
+                &::before {
+                    background: var(--clr-common-white);
+                }
+                &:hover{
+                    color: var(--clr-common-black);
+                    background: var(--clr-common-white);
+                }
+            }
+            &.white{
+                background: var(--clr-common-white);
+                color: var(--clr-common-black);
+                i{
+                    margin-right: 14px;
+                    margin-left: 0;
+                }
+                &::before {
+                    background: var(--clr-theme-1);
+                }
+                &:hover{
+                    color: var(--clr-common-white);
+                    background: var(--clr-theme-1);
+                }
+            }
+
+        }
+    }
+    &-icon{
+        margin-right: 14px;
+        font-size: 65px;
+        color: var(--clr-theme-1);
+        line-height: 1;
+        display: block;
+    }
+    &-text{
+        h3 {
+            color: var(--clr-common-white);
+            margin-bottom: 0px;
+        }
+        p{
+            color: var(--clr-common-color17);
+            font-size: 16px;
+            margin-bottom: 0;
+            a{
+                color: var(--clr-common-color18);
+                text-decoration: underline;
+                &:hover{
+                    color: var(--clr-theme-1);
+                }
+            }
+        }
+    }
+    &-content {
+        display: flex;
+        margin-left: -4px;
+    }
+}

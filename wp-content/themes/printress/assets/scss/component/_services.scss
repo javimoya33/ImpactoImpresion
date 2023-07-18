@@ -1,0 +1,352 @@
+/*----------------------------------------
+    05. Services CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+.bd-services1{
+    &__item {
+        background: var(--clr-common-white);
+        padding: 30px 30px 53px 60px;
+        border-radius: 6px;
+        position: relative;
+        @media #{$xl, $lg, $md, $sm, $xs} {
+            padding: 30px 25px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: auto;
+            width: 0;
+            height: 4px;
+            background: var(--clr-theme-1);
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            right: 0;
+        }
+        &:hover{
+            .bd-services1{
+                &__num {
+                    text-align: right;
+                    h6 {
+                        background: var(--clr-bg-black);
+                        color: var(--clr-common-white);
+                        &::before {
+                            border-color: var(--clr-bg-black) transparent transparent transparent;
+                        }
+                    }
+                } 
+            }
+            &::before{
+                width: 100%;
+                right: auto;
+                left: 0;
+            }
+        }
+    }
+    &__num {
+        text-align: right;
+        h6 {
+            background: var(--clr-bg-gray-2);
+            display: inline-block;
+            padding: 9px 12px;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 0;
+            line-height: 1;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 10px 8px 0 0;
+                border-color: var(--clr-bg-gray-2) transparent transparent transparent;
+            }
+    }
+    }
+    &__para {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--clr-common-gray-6);
+        margin-bottom: 13px;
+    }
+    &__icon {
+        margin-bottom: 33px;
+        font-size: 75px;
+        color: var(--clr-theme-1);
+    }
+    &__title {
+        margin-bottom: 33px;
+        line-height: 1.31;
+        @media #{$xl, $lg, $md, $sm, $xs} {
+            br{
+                display: none;
+            }
+        }
+        @media #{$lg, $md, $sm, $xs} {
+            font-size: 20px;
+        }
+        &:hover{
+            color: var(--clr-theme-1);
+        }
+    }
+    &__btn{
+        .theme-btn {
+            background: var(--clr-common-white);
+            color: var(--clr-bg-black);
+            box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.08);
+            line-height: 44px;
+            height: 44px;
+            padding: 0 24px;
+            &:hover{
+                color: var(--clr-common-white);
+            }
+        }
+    }
+}
+
+
+// Services Two Style Here 
+.bd-services2{
+    &__90{
+        margin-top: -90px;
+        position: relative;
+        z-index: 2;
+        @media #{$md, $sm, $xs} {
+            margin-top: 0;
+            padding-top: 120px; 
+        }
+    }
+    &__item{
+        padding: 38px 15px;
+        position: relative;
+        background: var(--clr-common-white);
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 5px;
+            width: 95%;
+            height: 5px;
+            background: var(--clr-common-color8);
+            @include border-radius(6px);
+            margin: auto;
+
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height:0;
+            background: var(--clr-theme-1);
+            @include border-radius(6px);
+            opacity: 0;
+            z-index: 1;
+            @include transition(0.3s);
+
+        }
+        &:hover{
+            .bd-services2{
+                &__img{
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &__title {
+                    color: var(--clr-common-white);
+                }
+                &__icon {
+                    i {
+                        color: var(--clr-common-white);
+                    }
+                }
+            }
+            &::after {
+                opacity: 0.86;
+                top: 0;
+                height: 100%;
+            }
+            &::before {
+                background: var(--clr-common-black4);
+            }
+
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(0.5s);
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__icon {
+        margin-bottom: 12px;
+        i {
+            font-size: 65px;
+            color: var(--clr-theme-1);
+            position: relative;
+            z-index: 3;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 4px;
+        position: relative;
+        z-index: 2;
+        &:hover {
+            color: var(--clr-theme-1);
+        }
+        @media #{$xxs} {
+            font-size: 14px;
+            
+        }
+    }
+}
+
+
+// Services Three Style Here 
+
+.bd-services3{
+    &__item {
+        padding-top: 49px;
+        padding-bottom: 30px;
+        text-align: center;
+        @include border-radius(6px);
+        @include transition(0.5s);
+        position: relative;
+        z-index: 1;
+        background: var(--clr-common-white);
+        &:hover {
+            .bd-services3{
+                &__icon{
+                    @include transform(translateY(-10px));
+                    i{
+                        color: var(--clr-common-white);
+                    }
+                }
+                &__title {
+                    color: var(--clr-common-white);
+                }
+                &__price {
+                    color: var(--clr-common-white);
+                    span {
+                        color: var(--clr-common-white);
+                }
+                }
+            }
+        }
+    }
+    &__icon{
+        @include transition(0.5s);
+        i {
+            font-size: 58px;
+            color: var(--clr-theme-1);
+            
+        }
+    }
+    &__price {
+        color: var(--clr-common-color16);
+        span {
+            color: var(--clr-common-text);
+        }
+    }
+    &__icon {
+        margin-bottom: 22px;
+    }
+    &__title{
+        font-size: 24px;
+        @media #{$sm, $xs} {
+            font-size: 20px;
+        }
+    }
+}
+
+// Services Details CSS Start Here 
+.bd-details{
+    &__work{
+        padding: 30px 20px;
+        p{
+            margin-bottom: 0px;
+        }
+        &--icon {
+            img {
+                height: 60px;
+            }
+        }
+    }
+}
+.bd-design{
+    &__guideline{
+        &--padd{
+            padding: 25px 30px;
+        }
+        ul {
+            li{
+                color: var(--clr-common-text);
+                overflow: hidden;
+                padding-bottom: 17px;
+                &:not(:last-child) {
+                    margin-bottom: 17px;
+                    border-bottom: 1px solid var(--clr-common-border);
+                }
+                &:last-child{
+                    padding-bottom: 0px;
+                }
+
+                span{
+                    float: right;
+                }
+                i{
+                    margin-right: 10px;
+                }
+                &:hover{
+                    a{
+                        color: var(--clr-theme-1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bd-postcard-item{
+    padding: 30px 0;
+    p{
+        margin-bottom: 0px;
+    }
+    &:hover{
+        h4{
+            color: var(--clr-common-white);
+        }
+        p{
+            color: var(--clr-common-gray-5);
+        }
+    }
+}
+
+.bd-services-details-img{
+    width: 100%;
+    height: 93%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

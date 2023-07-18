@@ -1,0 +1,678 @@
+# Translation of Plugins - Floating Chat Widget: Contact Chat Icons, Telegram Chat, Line Messenger, WeChat, Email, SMS, Call Button – Chaty - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Floating Chat Widget: Contact Chat Icons, Telegram Chat, Line Messenger, WeChat, Email, SMS, Call Button – Chaty - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-04-19 15:56:45+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Floating Chat Widget: Contact Chat Icons, Telegram Chat, Line Messenger, WeChat, Email, SMS, Call Button – Chaty - Stable (latest release)\n"
+
+#: views/admin/help.php:78
+msgid "There is some problem in sending request. Please send us mail on %s"
+msgstr "Hay algún problema en el envío de la solicitud. Por favor, envíanos un correo a %s"
+
+#: admin/class-social-icons.php:228
+msgid "@TikTok_username"
+msgstr "@Nombre_de_usuario_de_TikTok"
+
+#: views/admin/trigger-and-target.php:310
+#: views/admin/trigger-and-target.php:399
+#: views/admin/trigger-and-target.php:553
+#: views/admin/trigger-and-target.php:589
+msgid "Add Rule"
+msgstr "Añadir regla"
+
+#: views/admin/trigger-and-target.php:307
+#: views/admin/trigger-and-target.php:554
+#: views/admin/trigger-and-target.php:590
+msgid "Remove Rules"
+msgstr "Eliminar reglas"
+
+#: views/admin/trigger-and-target.php:295
+msgid "End Time"
+msgstr "Hora de finalización"
+
+#: views/admin/trigger-and-target.php:271
+msgid "Start Time"
+msgstr "Hora de inicio"
+
+#: views/admin/trigger-and-target.php:256
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#: views/admin/trigger-and-target.php:247
+msgid "Timezone"
+msgstr "Zona horaria"
+
+#: views/admin/dashboard.php:69
+msgid "Actions"
+msgstr "Acciones"
+
+#: views/admin/trigger-and-target.php:279
+msgid "End Date"
+msgstr "Fecha de finalización"
+
+#: views/admin/trigger-and-target.php:281
+msgid "Schedule a date from which the Chaty widget will stop being displayed (the end date is included)"
+msgstr "Programa una fecha desde la que el widget de Chaty dejará de mostrarse (la fecha de finalización está incluida)"
+
+#: views/admin/trigger-and-target.php:258
+msgid "Schedule a date from which the Chaty widget will be displayed (the starting date is included)"
+msgstr "Programa una fecha desde la que se mostrará el widget de Chaty (se incluye la fecha de inicio)"
+
+#: views/admin/trigger-and-target.php:220
+msgid "Date scheduling"
+msgstr "Programación de la fecha"
+
+#: views/admin/trigger-and-target.php:222
+msgid "Schedule the specific time and date when your Chaty widget appears."
+msgstr "Programa la fecha y hora especificas en las que aparecerá tu widget de Chaty."
+
+#: views/admin/dashboard.php:67 views/admin/dashboard.php:84
+#: views/admin/dashboard.php:86
+msgid "Created On"
+msgstr "Creado el"
+
+#: views/admin/dashboard.php:64
+msgid "Status"
+msgstr "Estado"
+
+#: admin/class-admin-base.php:493 admin/class-admin-base.php:494
+msgid "Dashboard"
+msgstr "Escritorio"
+
+#: views/admin/dashboard.php:65 views/admin/dashboard.php:81
+msgid "Widget name"
+msgstr "Nombre del widget"
+
+#: views/admin/customize-widget-section.php:170
+msgid "Custom Position"
+msgstr "Posición personalizada"
+
+#: views/admin/contact-form-feed.php:161 views/admin/contact-form-feed.php:202
+#: views/admin/dashboard.php:116
+msgid "Delete"
+msgstr "Borrar"
+
+#: views/admin/contact-form-feed.php:201 views/admin/contact-form-feed.php:247
+msgid "URL"
+msgstr "URL"
+
+#: views/admin/contact-form-feed.php:200 views/admin/contact-form-feed.php:244
+msgid "Date"
+msgstr "Fecha"
+
+#: views/admin/contact-form-feed.php:199 views/admin/contact-form-feed.php:241
+msgid "Message"
+msgstr "Mensaje"
+
+#: views/admin/channels-section.php:43 views/admin/contact-form-feed.php:196
+#: views/admin/contact-form-feed.php:232
+msgid "Name"
+msgstr "Nombre"
+
+#: views/admin/contact-form-feed.php:194 views/admin/contact-form-feed.php:226
+msgid "ID"
+msgstr "ID"
+
+#: views/admin/contact-form-feed.php:193
+msgid "Bulk"
+msgstr "Por lotes"
+
+#: views/admin/channel.php:573
+msgid "Contact Us"
+msgstr "Contacta con nosotros"
+
+#: views/admin/channel.php:267
+msgid "How can I help you? :)"
+msgstr "¿Cómo puedo ayudarte?"
+
+#: admin/class-admin-base.php:532 admin/class-admin-base.php:533
+msgid "Contact form leads"
+msgstr "Formulario de contacto para clientes potenciales"
+
+#: views/admin/contact-form-feed.php:195 views/admin/contact-form-feed.php:229
+msgid "Widget Name"
+msgstr "Nombre del widget"
+
+#: views/admin/recommended-plugins.php:472
+msgid "If you hide the recommended plugins page from your menu, it won't appear there again. Are you sure you'd like to do it?"
+msgstr "Si ocultas del menú la página de plugins recomendados, no volverán a aparecer. ¿Seguro que quieres hacerlo?"
+
+#: views/admin/recommended-plugins.php:471
+msgid "Are you sure?"
+msgstr "¿Seguro?"
+
+#: views/admin/recommended-plugins.php:461
+msgid "<strong>Compatible</strong> with your version of WordPress"
+msgstr "<strong>Compatible</strong> con tu versión de WordPress"
+
+#: views/admin/recommended-plugins.php:459
+msgid "<strong>Incompatible</strong> with your version of WordPress"
+msgstr "<strong>Incompatible</strong> con tu versión de WordPress"
+
+#: views/admin/recommended-plugins.php:457
+msgid "Untested with your version of WordPress"
+msgstr "No probado con tu versión de WordPress"
+
+#. translators: %s: Number of installations.
+#: views/admin/recommended-plugins.php:451
+msgid "%s Active Installations"
+msgstr "%s instalaciones activas"
+
+#: views/admin/recommended-plugins.php:446
+msgctxt "Active plugin installations"
+msgid "Less Than 10"
+msgstr "Menos de 10"
+
+#. translators: %s: Human-readable time difference.
+#: views/admin/recommended-plugins.php:433
+msgid "%s ago"
+msgstr "%s atrás"
+
+#: views/admin/recommended-plugins.php:430
+msgid "Last Updated:"
+msgstr "Última actualización:"
+
+#: views/admin/recommended-plugins.php:382
+msgid "This plugin doesn&#8217;t work with your version of PHP."
+msgstr "Este plugin no funciona con tu versión de PHP."
+
+#: views/admin/recommended-plugins.php:373
+msgid "This plugin doesn&#8217;t work with your version of WordPress."
+msgstr "Este plugin no funciona con tu versión de WordPress."
+
+#. translators: %s: URL to Update PHP page.
+#: views/admin/recommended-plugins.php:367
+#: views/admin/recommended-plugins.php:386
+msgid "<a href=\"%s\">Learn more about updating PHP</a>."
+msgstr "<a href=\"%s\">Aprende más sobre cómo actualizar PHP</a>."
+
+#. translators: %s: URL to WordPress Updates screen.
+#: views/admin/recommended-plugins.php:361
+#: views/admin/recommended-plugins.php:377
+msgid "<a href=\"%s\">Please update WordPress</a>."
+msgstr "<a href=\"%s\">Por favor, actualiza WordPress</a>."
+
+#: views/admin/recommended-plugins.php:349
+msgid "This plugin doesn&#8217;t work with your versions of WordPress and PHP."
+msgstr "Este plugin no funciona con tus versiones de WordPress y PHP."
+
+#: views/admin/recommended-plugins.php:319
+msgid "More Details"
+msgstr "Más detalles"
+
+#. translators: %s: Plugin name and version.
+#: views/admin/recommended-plugins.php:317
+msgid "More information about %s"
+msgstr "Más información sobre %s"
+
+#. translators: %s: Plugin name.
+#: views/admin/recommended-plugins.php:288
+msgctxt "plugin"
+msgid "Network Activate %s"
+msgstr "Activar %s para la red"
+
+#: views/admin/recommended-plugins.php:286
+msgid "Network Activate"
+msgstr "Activar para la red"
+
+#. translators: %s: Plugin name.
+#: views/admin/recommended-plugins.php:275
+msgctxt "plugin"
+msgid "Activate %s"
+msgstr "Activar %s"
+
+#: views/admin/recommended-plugins.php:259
+msgctxt "plugin"
+msgid "Cannot Update"
+msgstr "No se puede actualizar"
+
+#: views/admin/recommended-plugins.php:237
+msgctxt "plugin"
+msgid "Cannot Install"
+msgstr "No se puede instalar"
+
+#: views/admin/recommended-plugins.php:232
+msgid "Install Now"
+msgstr "Instalar ahora"
+
+#. translators: %s: Plugin name and version.
+#: views/admin/recommended-plugins.php:230
+msgctxt "plugin"
+msgid "Install %s now"
+msgstr "Instalar %s ahora"
+
+#. translators: %s: Plugin author.
+#: views/admin/recommended-plugins.php:206
+msgid "By %s"
+msgstr "Por %s"
+
+#: views/admin/recommended-plugins.php:161
+msgid "Hide From Menu"
+msgstr "Ocultar del menú"
+
+#: views/admin/recommended-plugins.php:160
+msgid "Try out our recommended plugins"
+msgstr "Prueba nuestros plugins recomendados"
+
+#: views/admin/customize-widget-section.php:436
+msgid "Call to action background"
+msgstr "Fondo de llamada a la acción"
+
+#: views/admin/customize-widget-section.php:424
+msgid "Call to action text color"
+msgstr "Color del texto de la llamada a la acción"
+
+#: admin/class-admin-base.php:557 admin/class-admin-base.php:558
+msgid "Recommended Plugins"
+msgstr "Plugins recomendados"
+
+#. translators: %s: Number of millions.
+#: views/admin/recommended-plugins.php:442
+msgctxt "Active plugin installations"
+msgid "%s+ Million"
+msgid_plural "%s+ Million"
+msgstr[0] "Más de %s millón"
+msgstr[1] "Más de %s millones"
+
+#. translators: 1: URL to WordPress Updates screen, 2: URL to Update PHP page.
+#: views/admin/recommended-plugins.php:353
+msgid "<a href=\"%1$s\">Please update WordPress</a>, and then <a href=\"%2$s\">learn more about updating PHP</a>."
+msgstr "<a href=\"%1$s\">Por favor, actualiza WordPress</a> y, después, <a href=\"%2$s\">aprende más sobre cómo actualizar PHP</a>."
+
+#: views/admin/recommended-plugins.php:301
+msgctxt "plugin"
+msgid "Installed"
+msgstr "Instalado"
+
+#: views/admin/recommended-plugins.php:273
+msgid "Activate"
+msgstr "Activar"
+
+#: views/admin/recommended-plugins.php:270
+msgctxt "plugin"
+msgid "Active"
+msgstr "Activo"
+
+#: views/admin/recommended-plugins.php:254
+msgid "Update Now"
+msgstr "Actualizar ahora"
+
+#. translators: %s: Plugin name and version.
+#: views/admin/recommended-plugins.php:252
+msgctxt "plugin"
+msgid "Update %s now"
+msgstr "Actualiza %s ahora"
+
+#: admin/class-social-icons.php:219
+msgid "Username"
+msgstr "Nombre del usuario"
+
+#: views/admin/channel.php:591 views/admin/customize-widget-section.php:589
+msgid "Background color"
+msgstr "Color del fondo"
+
+#: views/admin/customize-widget-section.php:567
+msgid "Number of messages"
+msgstr "Número de mensajes"
+
+#: views/admin/customize-widget-section.php:535
+msgid "Pending messages"
+msgstr "Mensajes pendientes"
+
+#: views/admin/customize-widget-section.php:578
+msgid "Number color"
+msgstr "Color del número"
+
+#: views/admin/pro_analytics.php:23
+msgid "Unlock Chaty Analytics. What can you use it for?"
+msgstr "Desbloquear Chaty Analytics. ¿Para qué puedes usarlo?"
+
+#: admin/class-social-icons.php:275
+msgid "Slack"
+msgstr "Slack"
+
+#: admin/class-admin-base.php:518 admin/class-admin-base.php:519
+#: views/admin/upgrade.php:207
+msgid "Widget Analytics"
+msgstr "Análisis del widget"
+
+#: views/admin/chaty_widget.php:18
+msgid "Create a new Chaty widgets for your website. What can you use it for?"
+msgstr "Crea nuevos widgets de Chaty para tu web. ¿Para qué lo puedes usar?"
+
+#: views/admin/dashboard.php:50
+msgid "Create New Widget"
+msgstr "Crear un nuevo widget"
+
+#: views/admin/customize-widget-section.php:474
+msgid "Icons view"
+msgstr "Vista de iconos"
+
+#: views/admin/customize-widget-section.php:378
+msgid "Message us!"
+msgstr "¡Envíanos un mensaje!"
+
+#: admin/class-social-icons.php:309 admin/class-social-icons.php:331
+#: admin/class-social-icons.php:353 admin/class-social-icons.php:375
+#: admin/class-social-icons.php:397
+msgid "Link"
+msgstr "Enlace"
+
+#: admin/class-social-icons.php:199
+msgid "Twitter"
+msgstr "Twitter"
+
+#: admin/class-social-icons.php:152 admin/class-social-icons.php:168
+#: admin/class-social-icons.php:208
+msgid "User Name"
+msgstr "Nombre de usuario"
+
+#: admin/class-social-icons.php:66
+msgid "https://m.me/Coca-Cola/"
+msgstr "https://m.me/Coca-Cola/"
+
+#: admin/class-social-icons.php:53 admin/class-social-icons.php:76
+#: admin/class-social-icons.php:121 admin/class-social-icons.php:188
+#: views/admin/contact-form-feed.php:198 views/admin/contact-form-feed.php:238
+msgid "Phone number"
+msgstr "Número de teléfono"
+
+#: admin/class-social-icons.php:31
+msgid "Pink"
+msgstr "Rosa"
+
+#: admin/class-social-icons.php:30
+msgid "Yellow"
+msgstr "Amarillo"
+
+#: admin/class-social-icons.php:29
+msgid "Black"
+msgstr "Negro"
+
+#: admin/class-social-icons.php:28
+msgid "Red"
+msgstr "Rojo"
+
+#: admin/class-social-icons.php:27
+msgid "Blue"
+msgstr "Azul"
+
+#: admin/class-social-icons.php:26
+msgid "Green"
+msgstr "Verde"
+
+#: admin/class-admin-base.php:2211
+msgid "%s is required"
+msgstr "%s es obligatorio"
+
+#: admin/class-admin-base.php:130
+msgid "Upgrade"
+msgstr "Actualizar"
+
+#: admin/class-admin-base.php:104 admin/class-admin-base.php:109
+#: admin/class-admin-base.php:156 admin/class-admin-base.php:160
+#: admin/class-admin-base.php:165
+msgid "Your request is not valid"
+msgstr "Tu petición no es válida"
+
+#: views/admin/upgrade.php:560
+msgid "30 days money back guaranteed"
+msgstr "Garantía de devolución de tu dinero de 30 días"
+
+#: views/admin/upgrade.php:57 views/admin/upgrade.php:80
+#: views/admin/upgrade.php:103 views/admin/upgrade.php:126
+#: views/admin/upgrade.php:149
+msgid "Updated and support for lifetime"
+msgstr "Actualizaciones y soporte de por vida"
+
+#: views/admin/upgrade.php:50 views/admin/upgrade.php:73
+#: views/admin/upgrade.php:96 views/admin/upgrade.php:119
+#: views/admin/upgrade.php:142
+msgid "Updated and support for 2 years"
+msgstr "Actualizaciones y soporte durante 2 años"
+
+#: views/admin/upgrade.php:43 views/admin/upgrade.php:66
+#: views/admin/upgrade.php:89 views/admin/upgrade.php:112
+#: views/admin/upgrade.php:135
+msgid "Updated and support for 1 year"
+msgstr "Actualizaciones y soporte durante 1 año"
+
+#: views/admin/admin.php:82 views/admin/admin.php:122
+#: views/admin/upgrade.php:223
+msgid "Back"
+msgstr "Atrás"
+
+#: views/admin/chaty-deactivate-form.php:151 views/admin/dashboard.php:167
+#: views/admin/dashboard.php:201 views/admin/dashboard.php:228
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: views/admin/chaty-deactivate-form.php:140
+msgid "Your comment"
+msgstr "Tu comentario"
+
+#: views/admin/help.php:72
+msgid "Your message is sent successfully."
+msgstr "Tu mensaje ha sido enviado correctamente."
+
+#: views/admin/help.php:65
+msgid "Done!"
+msgstr "¡Hecho!"
+
+#: views/admin/help.php:48
+msgid "Sending Request..."
+msgstr "Enviando la solicitud…"
+
+#: admin/class-admin-base.php:129 views/admin/help.php:37
+#: views/admin/help.php:41
+msgid "Need help?"
+msgstr "¿Necesitas ayuda?"
+
+#: views/admin/help.php:23 views/admin/help.php:59
+msgid "Chat"
+msgstr "Chat"
+
+#: views/admin/help.php:20
+msgid "How can I help you?"
+msgstr "¿Cómo puedo ayudarte?"
+
+#: views/admin/help.php:15
+msgid "Hello! Are you experiencing any problems with Chaty? Please let me know :)"
+msgstr "¡Hola! ¿Estás teniendo algún problema con Chaty? Por favor, házmelo saber :)"
+
+#: views/admin/customize-widget-section.php:447 views/admin/upgrade.php:183
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: views/admin/customize-widget-section.php:373
+msgid "Call to action"
+msgstr "Llamada a la acción"
+
+#: views/admin/customize-widget-section.php:165
+msgid "Right"
+msgstr "Derecha"
+
+#: views/admin/customize-widget-section.php:160
+msgid "Left"
+msgstr "Izquierda"
+
+#: admin/class-social-icons.php:25 views/admin/customize-widget-section.php:303
+msgid "Purple"
+msgstr "Púrpura"
+
+#: views/admin/customize-widget-section.php:300
+#: views/admin/customize-widget-section.php:356
+msgid "Custom"
+msgstr "Personalizado"
+
+#: views/admin/customize-widget-section.php:278
+msgid "Ok"
+msgstr "Aceptar"
+
+#: views/admin/customize-widget-section.php:271
+msgid "Custom color"
+msgstr "Color personalizado"
+
+#: views/admin/admin.php:243
+msgid "help"
+msgstr "ayuda"
+
+#: views/admin/admin.php:234
+msgid "Save"
+msgstr "Guardar"
+
+#: views/admin/admin.php:143
+msgid "Choose your channels"
+msgstr "Elige tus canales"
+
+#: views/admin/admin.php:246
+msgid "Preview"
+msgstr "Vista previa"
+
+#: views/admin/trigger-and-target.php:62
+msgid "Active"
+msgstr "Activado"
+
+#: views/admin/customize-widget-section.php:179
+msgid "Default state"
+msgstr "Estado por defecto"
+
+#: views/admin/admin.php:163
+msgid "Triggers and targeting"
+msgstr "Activadores y objetivos"
+
+#. Author URI of the plugin
+msgid "https://premio.io/downloads/chaty/"
+msgstr "https://premio.io/downloads/chaty/"
+
+#. Author of the plugin
+msgid "Premio"
+msgstr "Premio"
+
+#. Plugin Name of the plugin
+#: admin/class-admin-base.php:480 admin/class-admin-base.php:481
+msgid "Chaty"
+msgstr "Chaty"
+
+#: views/admin/channel.php:484
+msgid "Settings"
+msgstr "Ajustes"
+
+#: admin/class-admin-base.php:505
+msgid "Settings Admin"
+msgstr "Ajustes de administración"
+
+#: admin/class-admin-base.php:506
+msgid "+ Create New Widget"
+msgstr "+ Crear un nuevo widget"
+
+#: admin/class-social-icons.php:102
+msgid "InstagramUsername"
+msgstr "Nombre de usuario de Instagram"
+
+#: views/admin/customize-widget-section.php:144 views/admin/dashboard.php:53
+msgid "Upgrade Now"
+msgstr "Actualizar ahora"
+
+#: views/admin/customize-widget-section.php:211
+msgid "Show close button"
+msgstr "Mostrar el botón de cierre"
+
+#: admin/class-admin-base.php:2220
+msgid "Please enter your message"
+msgstr "Por favor, escribe tu mensaje"
+
+#: admin/class-admin-base.php:570 admin/class-admin-base.php:571
+#: views/admin/channel.php:431 views/admin/channel.php:457
+#: views/admin/channel.php:507 views/admin/channel.php:516
+#: views/admin/channel.php:708 views/admin/channel.php:762
+#: views/admin/channel.php:794 views/admin/channel.php:820
+#: views/admin/channel.php:833 views/admin/chaty_widget.php:17
+#: views/admin/customize-widget-section.php:62
+#: views/admin/customize-widget-section.php:172
+#: views/admin/customize-widget-section.php:273
+#: views/admin/customize-widget-section.php:467 views/admin/first-popup.php:60
+#: views/admin/popup.php:181 views/admin/popup.php:209
+#: views/admin/popup.php:213 views/admin/trigger-and-target.php:207
+#: views/admin/trigger-and-target.php:303
+#: views/admin/trigger-and-target.php:366
+#: views/admin/trigger-and-target.php:547
+#: views/admin/trigger-and-target.php:584
+#: views/admin/trigger-and-target.php:615
+msgid "Upgrade to Pro"
+msgstr "Actualizar a la versión Pro"
+
+#: views/admin/chaty-deactivate-form.php:131
+msgid "Quick feedback about Chaty"
+msgstr "Comentario rápido acerca de Chaty"
+
+#: views/admin/chaty-deactivate-form.php:145
+msgid "Anonymous feedback"
+msgstr "Comentario anónimo"
+
+#: views/admin/trigger-and-target.php:318
+msgid "Days and hours"
+msgstr "Días y horas"
+
+#: views/admin/trigger-and-target.php:51
+msgid "Trigger"
+msgstr "Disparador"
+
+#: admin/class-admin-base.php:2228 views/admin/contact-form-feed.php:197
+#: views/admin/contact-form-feed.php:235 views/admin/help.php:17
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: views/admin/chaty-deactivate-form.php:134
+msgid "Your feedback will help us improve the product, please tell us why did you decide to deactivate Chaty :)"
+msgstr "Tu comentario nos ayudará a mejorar el producto, por favor, dinos por qué has decidido desactivar Chaty :)"
+
+#: views/admin/channel.php:715 views/admin/chaty-deactivate-form.php:136
+msgid "Email address"
+msgstr "Dirección de correo electrónico"
+
+#: views/admin/upgrade.php:564
+msgid "The plugin will always keep working even if you don't renew your license"
+msgstr "Este plugin seguirá siempre funcionando, incluso si no renuevas tu licencia"
+
+#: views/admin/admin.php:153
+msgid "Customize your widget"
+msgstr "Personaliza tu widget"
+
+#: views/admin/channels-section.php:134
+msgid "On hover Close button text"
+msgstr "Texto al pasar el cursor sobre el botón de cierre"
+
+#: views/admin/customize-widget-section.php:496
+msgid "Attention effect"
+msgstr "Efecto de llamada de atencón"
+
+#: admin/class-social-icons.php:256
+msgid "My-Name-512b1413b"
+msgstr "Mi-nombre-512b1413b"
+
+#: admin/class-social-icons.php:179
+msgid "Maps link"
+msgstr "Enlace de Google Maps"
+
+#: admin/class-social-icons.php:246
+msgid "Enter a waze link"
+msgstr "Introduce un enlace de Waze"
+
+#: admin/class-social-icons.php:141
+msgid "Enter a poptin link"
+msgstr "Introduce un enlace de Poptin"
+
+#: admin/class-social-icons.php:266
+msgid "Link Vkontakte"
+msgstr "Enlace de Vkontakte"
+
+#. Description of the plugin
+msgid "Chat with your website visitors via their favorite channels. Show a chat icon on the bottom of your site and communicate with your website visitors."
+msgstr "Chatea con los visitantes de tu web por medio de sus canales favoritos. Muestra un icono de chat en la parte inferior de tu sitio y comunícate los visitantes de tu web."

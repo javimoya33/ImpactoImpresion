@@ -1,0 +1,155 @@
+/*----------------------------------------
+    07. Testimonial CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+.bd-tm {
+    background-size: 75%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    &--space{
+        @media #{$lg, $md, $sm, $xs} {
+            padding-bottom: 100px;
+            padding-top: 120px;
+        }
+    }
+    &__active {
+        position: relative;
+        margin-right: -520px;
+        padding-bottom: 50px;
+        @media #{$xl, $lg, $md, $sm, $xs} {
+            padding-bottom: 20px;
+        }
+        @media #{$sm,$xs}{
+            margin-right: 0;
+        }
+    }
+    &__nav{
+        &--20{
+            margin-top: -20px;
+            @media #{$xs} {
+                margin-top: 0;
+            }
+        }
+        i {
+            width: 58px;
+            height: 58px;
+            line-height: 56px;
+            text-align: center;
+            border-radius: 6px;
+            border: 2px solid var(--clr-common-color1);
+            background: var(--clr-common-white);
+            color: var(--clr-common-black);
+            font-size: 20px;
+            &:hover{
+                border-top-color: var(--clr-theme-1);
+                border-right-color: var(--clr-theme-1);
+                color: var(--clr-theme-1);
+            }
+          }
+    }
+    &__next {
+        margin-left: 16px;
+    }
+    &__item {
+        background: var(--clr-common-white);
+        box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+        padding: 46px 50px 50px 50px;
+        border-radius: 6px;
+        overflow: hidden;
+        border-bottom: 3px solid var(--clr-theme-1);
+        &:hover{
+            .bd-tm{
+                &__text{
+                    p {
+                        color: var(--clr-common-white);
+                    }
+                }
+                &__quote-icon {
+                    i {
+                        color: var(--clr-common-white);
+                      }
+                }
+                &__author {
+                    background: var(--clr-theme-1);
+                    &-name {
+                        color: var(--clr-common-white);
+                    }
+                    &-cat {
+                        color: var(--clr-common-white);
+                    }
+                }
+            }
+            &::before{
+                height: 100%;
+            }
+        }
+        @media #{$lg, $md, $sm, $xs} {
+            padding: 40px 20px 40px 20px;
+        }
+    }
+    &__rating{
+        margin-bottom: 15px;
+        i {
+            color: var(--clr-common-yellow);
+            &:last-child{
+                color: var(--clr-common-gray-4);
+            }
+        }
+    }
+    &__text{
+        
+        margin-bottom: 32px;
+        p {
+            font-size: 20px;
+            color: var(--clr-common-heading);
+            letter-spacing: -0.3px;
+            font-weight: 600;
+            line-height: 30px;
+            @media #{$lg, $md, $sm, $xs} {
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0px;
+            }
+        }
+    }
+    &__author {
+        background: var(--clr-common-gray-5);
+        display: flex;
+        position: relative;
+        border-radius: 6px;
+        @include transition(0.4s);
+        &-name {
+            margin-bottom: 0;
+            padding-top: 16px;
+        }
+        &-img{
+            margin-right: 20px;
+            width: 70px;
+            height: 70px;
+            img{
+                width: 100%;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+        }
+    }
+    &__quote-icon {
+        position: absolute;
+        right: 0;
+        top: -30px;
+        i {
+            @include transition(0.4s);
+            font-size: 52px;
+            @include transform(rotate(-180deg));
+            display: block;
+            color: var(--clr-theme-1);
+          }
+    }
+}
+
+.bd-section__tm-title{
+    @media #{$xs} {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,113 @@
+/*----------------------------------------
+    06. Counter CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+.bd-counter{
+    @media #{$lg, $md, $sm, $xs} {
+        padding-bottom: 15px;
+    }
+    &1__item{
+        @media #{$lg, $md, $sm, $xs} {
+            margin-bottom: 50px;
+        }
+    }
+    &__title {
+        color: var(--clr-common-white);
+        margin-bottom: 7px;
+        line-height: 1;
+        margin-top: -2px;
+        @media #{$xs} {
+            font-size: 40px;
+        }
+    }
+    &__plus {
+        font-size: 38px;
+        @media #{$xxs} {
+            font-size: 20px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        color: var(--clr-common-white);
+        font-family: $handlee;
+        display: block;
+        margin-bottom: 33px;
+        @media #{$lg, $md, $sm, $xs} {
+            margin-bottom: 10px;
+        }
+    }
+    &__icon {
+        width: 100px;
+        height: 100px;
+        background: var(--clr-common-white);
+        border-radius: 50%;
+        text-align: center;
+        margin: auto;
+        box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+        margin: 0 auto -50px;
+        @include transition(0.5s);
+        z-index: 2;
+        position: relative;
+        color: var(--clr-theme-1);
+        padding-top: 30px;
+        font-size: 40px;
+        @media #{$lg, $md, $sm, $xs} {
+            margin: auto;
+        }
+        @media #{$xxs} {
+            width: 75px;
+            height: 75px;
+            padding-top: 18px;
+        }
+      }
+}
+
+.bd-counter2 {
+	overflow: hidden;
+}
+.bd-counter2{
+    &__back{
+        position: absolute;
+        bottom: 48px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        @media #{$lg, $md, $sm} {
+            bottom: 20px;
+        }
+        @media #{$sm, $xs} {
+            bottom: 15px;
+        }
+        h2 {
+            color: var(--clr-common-color12);
+            -webkit-text-fill-color: var(--clr-theme-1);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: var(--clr-common-color12);
+            opacity: 0.2;
+            font-size: 220px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 0.318;
+            letter-spacing: 41px;
+            z-index: 0;
+            font-family: $playfairDisplay;
+            @media #{$xl} {
+                letter-spacing: 10px;
+            }
+            @media #{$lg, $md} {
+                letter-spacing: 0px;
+                font-size: 140px;
+            }
+            @media #{$sm, $xs} {
+                letter-spacing: 0px;
+                font-size: 100px;
+            }
+            @media #{$xxs} {
+                letter-spacing: 0px;
+                font-size: 60px;
+            }
+        }
+    }
+}

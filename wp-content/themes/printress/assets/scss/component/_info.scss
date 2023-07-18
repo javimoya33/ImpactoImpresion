@@ -1,0 +1,155 @@
+/*----------------------------------------
+    16. Info CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+
+
+.bd-info{
+  &__53{
+    margin-top: -53px;
+    @media #{$md, $sm, $xs} {
+      margin-top: -110px;
+    }
+  }
+  &__wrapper{
+    padding: 28px 30px 0px 30px;
+  }
+  &__item {
+    display: flex;
+    margin-right: 40px;
+    @media #{$md, $sm, $xs} {
+      margin-right: 25px;
+    }
+    @media #{$sm, $xs} {
+      margin-bottom: 30px;
+    }
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+  &__text {
+    margin-top: -6px;
+  }
+  &__icon {
+    margin-right: 17px;
+    font-size: 30px;
+    color: var(--clr-common-red);
+  }
+  &__sub-title {
+    color: var(--clr-common-white);
+    opacity: 0.5;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--clr-common-white);
+    margin-bottom: 0;
+    @media #{$lg, $md, $sm, $xs} {
+      font-size: 18px;
+    }
+    &:hover{
+      color: var(--clr-theme-1);
+    }
+  }
+  &__social{
+    ul {
+      li {
+        display: inline-block;
+        margin-left: 2px;
+        a {
+          display: block;
+          background: var(--clr-common-color13);
+          width: 38px;
+          height: 38px;
+          text-align: center;
+          line-height: 43px;
+          @include border-radius(6px);
+          color: var(--clr-common-white);
+        }
+        &:hover{
+          a{
+            background: var(--clr-theme-1);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Bd info Two 
+.bd-info__item-wrapper {
+  justify-content: start !important;
+}
+
+// Bd info 3 CSS 
+.bd-info{
+  &__wrapper3{
+    justify-content: space-between !important;
+    @media #{$md, $sm, $xs} {
+      .bd-info__item-wrapper.three {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  &.three{
+    border-bottom: 2px solid var(--clr-common-color23);
+    .bd-info{
+      &__item{
+        align-items: center;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-left: 2px solid var(--clr-common-color23);
+        margin-bottom: 0px;
+        &:first-child{
+          border-left: 0;
+        }
+        @media #{$xl, $lg, $md, $sm, $xs} {
+          border-left: 0px;
+          padding-left: 10px;
+          border-left: 0;
+          margin-left: 0;
+          margin-right: 0;
+          padding-bottom: 0px;
+        }
+      }
+      &__text {
+        margin-top: 0px;
+      }
+      &__icon {
+        width: 40px;
+        height: 40px;
+        background: var(--clr-theme-1);
+        border-radius: 6px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        color: var(--clr-common-white);
+      }
+      &__title {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--clr-common-color22);
+        &:hover{
+          color: var(--clr-common-white);
+        }
+      }
+    }
+  }
+}
+
+.bd-info__item-wrapper.three{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    @media #{$xl, $lg, $md, $sm, $xs} {
+      padding-bottom: 20px;
+    }
+    @media #{$md, $sm} {
+      grid-template-columns: repeat(2,1fr);
+    }
+    @media #{$xs} {
+      grid-template-columns: repeat(1,1fr);
+    }
+}

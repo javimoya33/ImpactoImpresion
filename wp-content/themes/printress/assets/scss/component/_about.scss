@@ -1,0 +1,275 @@
+/*----------------------------------------
+    04. About CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+.bd-about1{
+	&__box{
+		background: var(--clr-bg-white);
+		padding-bottom: 60px;
+		border-radius: 6px;
+		padding-top: 80px;
+		@include transform(translateY(40px));
+		@media #{$lg} {
+			padding-bottom: 75px;
+		}
+		@media #{$md, $sm, $xs} {
+			padding-bottom: 50px;
+		}
+	}
+	&__wrapper {
+		position: relative;
+	}
+	&__content-wrapper {
+		padding-right: 30px;
+		padding-left: 70px;
+		@media #{$xl, $lg} {
+			padding-right: 0px;
+			padding-left: 25px;
+		}
+		@media #{$lg, $md, $sm, $xs} {
+			padding-right: 0px;
+			padding-left: 5px;
+		}
+		@media #{$md, $sm, $xs} {
+			padding-top: 70px;
+		}
+	}
+	&__printing{
+		padding: 16px 32px;
+		background: var(--clr-bg-white);
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+		box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+		border-top: 2px solid var(--clr-theme-1);
+		margin-bottom: 24px;
+		@media #{$xs} {
+			padding: 20px;
+			
+		}
+	}
+	&__print-title {
+		margin-bottom: 0;
+		display: inline-block;
+	}
+	&__icon {
+		padding-left: 57px;
+		font-size: 46px;
+		color: var(--clr-theme-1);
+		@media #{$sm, $xs} {
+			padding-left: 20px;
+		}
+	}
+	&__text {
+		font-size: 16px;
+		font-family: $handlee;
+		display: block;
+		margin-top: -6px;
+		@media #{$xxs} {
+			margin-top: 0px;
+		}
+	}
+	&__experience {
+		position: absolute;
+		background: var(--clr-bg-white);
+		box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+		border-radius: 6px;
+		padding: 40px 32px 33px 32px;
+		bottom: 49px;
+		z-index: 5;
+		left: 160px;
+		display: inline-block;
+		text-align: center;
+		&-icon{
+			font-size: 60px;
+			color: var(--clr-theme-1);
+			@media #{$xxs} {
+				font-size: 40px;
+			}
+		}
+		@media #{$lg, $md, $sm, $xs} {
+			bottom: -70px;
+		}
+		@media #{$xs} {
+			left: 50%;
+			@include transform(translateX(-50%));
+			padding: 40px 40px 32px 40px;
+		}
+	}
+	&__plus {
+		font-size: 37px;
+	}
+	&__count-title {
+		line-height: 1;
+		margin-bottom: 2px;
+	}
+}
+
+
+
+// About Two CSS 
+.bd-about2{
+	&__img{
+		p{
+			margin-bottom: 48px;
+			margin-top: -6px;
+		}
+	}
+	&__list {
+		&-wrapper {
+			padding-left: 20px;
+			@media #{$lg, $md, $sm, $xs} {
+				padding-left: 4px;
+				
+			}
+			p{
+				margin-bottom: 40px;
+				margin-top: -6px;
+			}
+		}
+		margin-bottom: 40px;
+		ul {
+			li {
+				margin-bottom: 9px;
+				i {
+					margin-right: 13px;
+					color: var(--clr-theme-1);
+				}
+			}
+		}
+	}
+	&__author {
+		display: flex;
+		align-items: center;
+		&-img {
+			margin-right: 20px;
+			width: 60px;
+			height: 60px;
+			@include border-radius(50%);
+			overflow: hidden;
+		}
+	}
+	&__text{
+		h6 {
+			margin-bottom: 0;
+		}
+	}
+	&__sc {
+		background: var(--clr-bg-black);
+		padding: 36px 42px 35px 40px;
+		@include border-radius(6px);
+		@media #{$lg, $md, $sm, $xs} {
+			padding: 30px 25px 25px 25px;
+		}
+		&-title {
+			color: var(--clr-common-white);
+			margin-bottom: 12px;
+		}
+		&-text {
+			font-size: 16px;
+			color: var(--clr-common-color9);
+			line-height: 24px;
+		}
+		&-list{
+			li {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 5px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+				.day {
+					font-size: 16px;
+					font-weight: 600;
+					color: var(--clr-common-white);
+				}
+				.time {
+					text-align: right;
+					color: var(--clr-common-color10);
+					font-size: 16px;
+				}
+
+			}
+		}
+		&-list{
+			ul {
+				li{
+					&:last-child .time{
+						color: var(--clr-theme-1);
+					}
+				}
+			}
+		}
+	}
+	&__wrapper{
+		.col-xxl-3{
+			&:last-child{
+				padding-left: 0;
+				@media #{$md, $sm, $xs} {
+					padding-left: 15px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+// About 3 CSS 
+.bd-about3{
+	&__content {
+		padding-left: 70px;
+		padding-right: 27px;
+		@media #{$xl} {
+			padding-left: 40px;
+		}
+		@media #{$lg} {
+			padding-left: 20px;
+			padding-right: 0px;
+		}
+		@media #{$md, $sm, $xs} {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-top: 1px solid #e8e8e8;
+		padding-top: 26px;
+		padding-bottom: 19px;
+	}
+	&__icon-wrapper {
+		display: flex;
+		align-items: center;
+	}
+	&__icon{
+		margin-right: 20px;
+		i {
+			font-size: 60px;
+			color: var(--clr-theme-1);
+		}
+	}
+	&__text {
+		margin-bottom: 31px;
+	}
+	&__arrow {
+		a {
+			color: var(--clr-common-color11);
+			font-size: 20px;
+			&:hover{
+				color:var(--clr-theme-1);
+			}
+		}
+	}
+	&__inner-title{
+		h4{
+			font-size: 20px;
+			&:hover{
+				color: var(--clr-theme-1);
+			}
+		}
+	}
+}

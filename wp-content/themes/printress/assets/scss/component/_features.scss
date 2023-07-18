@@ -1,0 +1,179 @@
+/*----------------------------------------
+    08. Features CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+.bd-features{
+    &__box {
+        position: relative;
+        z-index: 50;
+        padding-bottom: 50px;
+        @include transform(translateY(40px));
+        @media #{$lg, $md, $sm, $xs} {
+            @include transform(translateY(0px));
+            padding-top: 120px;
+            padding-bottom: 60px;
+        }
+        @media #{$md} {
+            padding-bottom: 70px;
+        }
+        @media #{$sm, $xs} {
+            padding-bottom: 45px;
+        }
+    }
+    &__content {
+        padding-left: 40px;
+        padding-top: 80px;
+        @media #{$lg, $md} {
+            padding-left: 20px;
+            padding-top: 0;
+        }
+        @media #{$sm, $xs} {
+            padding-left: 0px;
+            padding-top: 0;
+        }
+        &-inner {
+            @media #{$xs} {
+                display: block !important;
+            }
+        }
+    }
+    &__img{
+        margin-top: -100px;
+        padding-right: 30px;
+        @media #{$lg, $md, $sm, $xs} {
+            padding-right: 0;
+            margin-top: 0;
+        }
+        img {
+            @include border-radius(12px);
+            border-bottom: 6px solid var(--clr-common-yellow);
+        }
+    }
+    &__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+    }
+    .bd__subtitle{
+        color:var(--clr-common-color2);
+    }
+    &__gl {
+        background: var(--clr-theme-1);
+        padding: 25px 51px 20px 31px;
+        @include border-radius(6px);
+        margin-right: 40px;
+        &-title {
+            font-size: 18px;
+            color: var(--clr-common-white);
+            margin-bottom: 17px;
+        }
+        &-text{
+            span {
+                display: block;
+                color: var(--clr-common-color12);
+                line-height: 30px;
+            }
+        }
+        @media #{$lg, $md, $sm, $xs} {
+            padding: 20px;
+        }
+        @media #{$xs} {
+            margin-right: 0;
+        }
+    }
+    &__f {
+        background: var(--clr-common-black2);
+        padding: 28px 29px;
+        @include border-radius(6px);
+        &-title {
+            font-size: 18px;
+            color: var(--clr-common-white);
+            margin-bottom: 17px;
+        }
+        a {
+            display: block;
+            color: var(--clr-common-gray-6);
+            i {
+                margin-right: 10px;
+                color: var(--clr-common-color4);
+            }
+            span {
+                position: relative;
+                line-height: 30px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: var(--clr-common-white);
+                    @include border-radius(6px);
+                }
+            }
+            &:hover{
+                color: var(--clr-common-white);
+                span{
+                    &::before {
+                        width: 100%;
+                    }
+                }
+                i{
+                    color: var(--clr-common-yellow);
+                }
+            }
+        }
+        @media #{$lg, $md, $sm, $xs} {
+            padding: 20px;
+        }
+    }
+    &__bottom{
+        &-img {
+            display: flex;
+            margin-right: 13px;
+            margin-left: -10px;
+            & > div {
+                width: 60px;
+                height: 60px;
+            }
+            img {
+                width: 100%;
+            }
+            &2 {
+                margin-left: -36px;
+            }
+            &3 {
+                margin-left: -34px;
+            }
+        }
+        &-text{
+            h4 {
+                font-size: 18px;
+                color: var(--clr-common-white);
+                line-height: 28px;
+                @media #{$sm, $xs} {
+                    font-size: 18px;
+                    line-height: 26px;
+                    
+                }
+                @media #{$md, $sm, $xs} {
+                    br{
+                        display: none;
+                    }
+                    
+                }
+              }
+        }
+    }
+    &__book-img {
+        position: absolute;
+        right: -220px;
+        bottom: -85px;
+        @media #{$xxxl, $xxl, $xl, $lg, $md, $sm, $xs} {
+            display: none;
+        }
+    }
+    
+}

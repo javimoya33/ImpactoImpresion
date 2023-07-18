@@ -1,0 +1,139 @@
+/*----------------------------------------
+    18. Award CSS
+----------------------------------------*/
+@use "../abstract" as *;
+.bd-award{
+    position: relative;
+    @media #{$md, $sm, $xs} {
+        padding-bottom: 100px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 556px;
+        background: var(--clr-theme-1);
+        z-index: -1;
+        @media #{$xl} {
+            height: 510px;
+        }
+        @media #{$lg} {
+            height: 466px;
+        }
+        @media #{$md, $sm, $xs} {
+            height: 100%;
+        }
+    }
+    &__year{
+        span {
+            font-size: 16px;
+            color: #171819;
+            font-weight: 700;
+            background: var(--clr-common-white);
+            display: inline-block;
+            border-radius: 6px;
+            padding: 9px 20px;
+            line-height: 1;
+            position: relative;
+            &::before {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 17px 11px 4px 1px;
+                border-color: var(--clr-common-white) transparent transparent transparent;
+                content: '';
+                position: absolute;
+                bottom: -14px;
+                left: 0px;
+            }
+        }
+    }
+    &__icon {
+        width: 100px;
+        height: 100px;
+        background: var(--clr-common-black4);
+        border-radius: 6px;
+        margin: auto;
+        padding-top: 20px;
+        position: relative;
+        position: relative;
+        @include transform(translateY(-50px));
+        @include transition(0.5s);
+        i {
+            font-size: 60px;
+            color: var(--clr-common-white);
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 4px;
+            background: var(--clr-theme-1);
+            left: 0;
+            bottom: 0;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+    }
+    &__thum{
+        overflow: hidden;
+        border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        img {
+            width: 100%;  
+        }
+    }
+    &__content {
+        background: var(--clr-common-white);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 0 67px 28px 67px;
+        box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+        @media #{$lg, $md, $sm, $xs} {
+            padding: 0 15px 28px 15px;
+        }
+        &::before{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+        @media #{$xl, $lg, $md, $sm, $xs} {
+            padding: 0 30px 28px 30px;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: -16px;
+        @media #{$lg, $md, $sm, $xs} {
+            font-size: 20px;
+        }
+    }
+    &__item{
+        &:hover{
+            .bd-award{
+                &__thum{
+                    img{
+                        @include transform(scale(1.05));
+                    }
+                }
+                &__icon {
+                    background: var(--clr-theme-1);
+                    &::before{
+                        background: var(--clr-common-black4);
+                    }
+                }
+            }
+            .bd-hover-top{
+                .bd-award__title{
+                    color: var(--clr-common-white);
+                }
+                &::before{
+                    height: 100%;
+                }
+            }
+        }
+        
+    }
+}

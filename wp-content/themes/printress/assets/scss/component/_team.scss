@@ -1,0 +1,160 @@
+/*----------------------------------------
+    19. Team CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+.bd-team{
+    &__thum{
+        overflow: hidden;
+    }
+    &__content{
+        padding: 30px 20px 20px 25px;
+    }
+    &__name {
+        margin-bottom: 5px;
+        &:hover{
+            color: var(--clr-common-red);
+        }
+    }
+    &__title {
+        display: block;
+    }
+    &__social{
+        ul {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            li{
+                &:hover{
+                    a{
+                        color: var(--clr-common-red);
+                    }
+                }
+            }
+        }
+    }
+    &__item{
+        overflow: hidden;
+        &:hover{
+            .bd-team{
+                &__thum{
+                    img{
+                        @include transform(scale(1.05));
+                    }
+                }
+            }
+        }
+    }
+    &-info{
+        &__item {
+            &--title {
+                color: var(--clr-common-white);
+                margin-bottom: 10px;
+            }
+            a {
+                color: var(--clr-common-white);
+            }
+        }
+        &-space{
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 30px;
+            line-height: 1;
+            @media #{$lg, $sm, $xs} {
+                grid-template-columns: repeat(2,1fr);
+            }
+            @media #{$xxs} {
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        &-social{
+            ul {
+                display: flex;
+                gap: 18px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+    &__education{
+        &-item{
+            span{
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__skill{
+        &-wrapper{
+            margin-bottom: 25px;
+            .progress {
+                background: var(--clr-bg-white2);
+                height: 10px;
+                .progress-bar {
+                    background-color: var(--clr-theme-1);
+                }
+            }
+        }
+        &-title{
+            line-height: 1;
+            display: flex;
+            justify-content: space-between;
+            span{
+                float: right;
+            }
+            h5 {
+                margin-bottom: 0;
+            }
+        }
+        
+    }
+    &__case{
+        &-content {
+            left: 0;
+            right: 0;
+            bottom: 40px;
+            text-align: center;
+            opacity: 0;
+            @include transition(0.3s);
+        }
+        &-title {
+            color: var(--clr-common-white);
+          }
+        &-subtitle {
+            color: var(--clr-common-white);
+            display: inline-block;
+            margin-bottom: 12px;
+          }
+        &-item{
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: var(--clr-theme-1);
+                mix-blend-mode: multiply;
+                opacity: 0;
+                @include border-radius(6px);
+            }
+            &:hover{
+                &::before {
+                    opacity: 0.9;
+                }
+                .bd-team__case-content{
+                    bottom: 50px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.bd-details__content-padd{
+    padding-left: 20px;
+    @media #{$md, $sm, $xs} {
+        padding-left: 0;
+    }
+}

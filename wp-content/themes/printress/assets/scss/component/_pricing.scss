@@ -1,0 +1,172 @@
+/*----------------------------------------
+    20. Pricing CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+
+.pricing__box{
+	background:var(--clr-common-white);
+	padding: 54px 50px;
+	text-align: center;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    @include border-radius(6px);
+    @include transition(0.3s);
+    @media #{$xl}{
+        padding: 60px 20px;
+    }
+    &.active{
+        border-color: var(--clr-theme-1);
+        @include transform(scale(1.04));
+    }
+    &:hover{
+        border-color: var(--clr-theme-1);
+        @include transform(scale(1.04));
+    }
+}
+
+
+.pricing__badge {
+	font-size: 13px;
+	font-weight: 700;
+	background: var(--clr-theme-1);
+	color: var(--clr-common-white);
+	text-transform: uppercase;
+	width: 200px;
+	height: 185px;
+	display: flex;
+	align-items: end;
+	justify-content: center;
+	padding-bottom: 5px;
+	position: absolute;
+	top: -106px;
+	right: -116px;
+	transform: rotate(46deg);
+}
+
+
+.pricing__package{
+    &-price{
+        font-size: 80px;
+        font-weight: 700;
+        color: var(--clr-theme-1);
+        line-height: 0.7;
+        display: flex;
+        justify-content: center;
+        @media #{$sm, $xs} {
+            font-size: 60px;
+        }
+    }
+    &-name {
+        color: var(--clr-common-black);
+        margin-bottom: 30px;
+    }
+    &-currency {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--clr-common-black);
+    }
+    &-period {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--clr-common-black);
+        margin-top: auto;
+        margin-left: -10px;
+    }
+}
+
+
+.pricing__features{
+    &-list {
+        border-top: 2px solid var(--clr-common-border2);
+        padding-top: 40px;
+        margin-top: 45px;
+        margin-bottom: 42px;
+        ul{
+            li {
+                margin-bottom: 8px;
+                display: block;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+
+.pricing-tab{
+    .nav-tabs {
+        border: none;
+        .nav-link {
+            margin-bottom: 0;
+            border: 0;
+        }
+    }
+    .nav{
+        .nav-item {
+            padding-left: 0px;
+            .nav-link {
+                padding: 7px 60px;
+                background: transparent;
+                @include border-radius(0);
+                font-weight: 600;
+                text-transform: capitalize;
+                color: var(--clr-common-black);
+                position: relative;
+                outline: none;
+                font-size: 18px;
+                border: none;
+                z-index: 2;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    right: 0px;
+                    top: 50%;
+                    @include transform(translateY(-50%) translateX(50%));
+                    background: var(--clr-common-color-21);
+                    width: 80px;
+                    height: 40px;
+                    @include border-radius(30px);
+                    border: 1px solid var(--clr-theme-1);
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    right: -32px;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                    width: 22px;
+                    height: 22px;
+                    @include border-radius(50%);
+                    background: var(--clr-theme-1);
+                    z-index: 1;
+                }
+                &.active {
+                    color: var(--clr-theme-1);
+                    &::after {
+                        right: 10px;
+                    }
+                }
+            }
+            &:last-child{
+                .nav-link {
+                    padding-right: 0;
+                    &::after {
+                        display: none;
+                    }
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+            &:first-child{
+                .nav-link {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+

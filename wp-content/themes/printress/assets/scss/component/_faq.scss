@@ -1,0 +1,149 @@
+/*----------------------------------------
+    10. FAQ CSS
+----------------------------------------*/
+@use "../abstract" as *;
+.bd-faq{
+	&__padd{
+		padding-right: 80px;
+		@media #{$xl, $lg, $md, $sm, $xs} {
+			padding-right: 10px;
+		}
+	}
+
+	&__wrapper{
+		.accordion{
+			&-item {
+				margin-bottom: 20px;
+				&:last-child{
+					margin-bottom: 0px;
+				}
+				&:first-of-type{
+					.accordion-button {
+						border-top-left-radius: 6px;
+						border-top-right-radius: 6px;
+					}
+				}
+			}
+			&-body {
+				padding: 23px 30px 7px 30px;
+				p{
+					margin-bottom: 0;
+				}
+				@media #{$xxs} {
+					padding: 25px 15px 8px 15px;
+				}
+			}
+			&-collapse {
+				border: none;
+			}
+			&-button {
+				background: var(--clr-bg-gray-3);
+				font-size: 18px;
+				font-weight: 600;
+				color: var(--clr-common-heading);
+				padding: 10px 10px 10px 30px;
+				border-radius: 6px;
+				text-transform: capitalize;
+				border: none;
+				text-align: start;
+				&:not(.collapsed) {
+					color: var(--clr-common-white);
+					background-color: var(--clr-theme-1);
+					
+				}
+				&:focus {
+					box-shadow: none;
+				}
+				&.collapsed::after {
+					font-family: "Font Awesome 5 Pro";
+					content: "\f067";
+					background-image: none;
+					background-color: var(--clr-bg-black3);
+					background: var(--clr-common-black3);
+					width: 40px;
+					height: 40px;
+					@include border-radius(6px);
+					color:var(--clr-common-white);
+					line-height: 40px;
+					font-size: 18px;
+					text-align: center;
+				}
+				&::after {
+					font-family: "Font Awesome 5 Pro";
+					content: "\f068";
+					background-image: none;
+					background: var(--clr-common-white);
+					color: var(--clr-common-black3);
+					width: 40px;
+					height: 40px;
+					line-height: 40px;
+					@include border-radius(6px);
+					text-align: center;
+					@include transform(rotate(0deg));
+				}
+				@media #{$lg, $md, $sm, $xs} {
+					padding: 9px 10px 9px 15px;
+				}
+			}
+		}
+	}
+	&__img{
+		position: absolute;
+		top: 35px;
+		right: 0;
+		@media #{$xxxl} {
+			max-width: 800px;
+			img{
+				width: 100%;
+			}
+		}
+		@media #{$xxl, $xl, $lg} {
+			max-width: 750px;
+			top: 50%;
+			transform: translateY(-50%);
+			img{
+				width: 100%;
+			}
+		}
+		@media #{$xl} {
+			max-width: 600px;
+		}
+		@media #{$lg} {
+			max-width: 500px;
+		}
+
+
+		
+
+		@media #{$md, $sm, $xs} {
+            display: none;
+        }
+	}
+}
+
+// FAQ Two CSS 
+.bd-faq__padd2{
+	padding-left: 80px;
+	@media #{$xl, $lg} {
+		padding-left: 10px;
+	}
+	@media #{$md, $sm, $xs} {
+		padding-left: 0px;
+	}
+}
+
+
+
+.gm-faq.gm-faq-2column .accordion {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 50px;
+	row-gap: 20px;
+}
+
+.gm-faq.gm-faq-2column .accordion > div {
+	width: calc((100% - 50px) / 2);
+    @media #{$md, $sm, $xs} {
+        width: calc((100% - 0px) / 1);
+    }
+}

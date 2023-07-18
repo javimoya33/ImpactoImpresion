@@ -1,0 +1,51 @@
+/*----------------------------------------
+    09. Brand CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+
+.bd-brand{
+    &--space{
+        @media #{$lg, $md, $sm, $xs} {
+            padding-top: 100px;
+        }
+    }
+    @media #{$md, $sm, $xs} {
+        padding-top: 90px;
+    }
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-items {
+        text-align: center;
+        img {
+            opacity: 0.4;
+            max-width: 100%;
+        }
+        &:hover{
+            img{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+// Brand Two CSS 
+.bd-brand{
+    &2__wrapper{
+        padding: 50px;
+    }
+}
+
+// Brand Three CSS 
+.bd-sponsor__text{
+    p{
+        font-size: 20px;
+        font-family: $handlee;
+        color: var(--clr-common-heading);
+        span{
+            color: var(--clr-theme-1);
+        }
+    }
+    
+}

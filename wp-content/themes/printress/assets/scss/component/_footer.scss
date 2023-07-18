@@ -1,0 +1,297 @@
+/*----------------------------------------
+    21. Footer CSS
+----------------------------------------*/
+@use "../abstract" as *;
+
+// Footer Top CSS 
+.bd-footer{
+	&__widget{
+		margin-top: -5px;
+		.bd-footer{
+			&__title {
+				margin-bottom: 35px;
+				@media #{$md, $sm, $xs} {
+					margin-bottom: 25px;
+				}
+			}
+			&__link{
+				display: flex;
+				line-height: 1;
+				gap: 40px;
+				@media #{$xl} {
+					gap: 25px;
+				}
+				ul{
+					li{
+						margin-bottom: 18px;
+						&:last-child{
+							margin-bottom: 0px;
+						}
+					}
+				}
+			}
+			&__contact{
+				ul{
+					margin-top: -5px;
+					li{
+						margin-bottom: 13px;
+						&:last-child{
+							margin-bottom: 0px;
+						}
+					}
+				}
+			}
+			&__form {
+				position: relative;
+				&::before{
+					content: '\f0e0';
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 25px;
+					font-family: $fontawesome;
+					color: var(--clr-theme-1);
+					font-weight: 700;
+				}
+				input {
+					display: block;
+					width: 100%;
+					background: var(--clr-common-white);
+					border: none;
+					@include border-radius(6px);
+					height: 60px;
+					padding: 0 20px 0 50px;
+					&::-moz-placeholder {
+						color: var(--clr-common-placeholder2);
+						font-family: $playfairDisplay;
+					}
+					&::placeholder {
+						color: var(--clr-common-placeholder2);
+						font-family: $playfairDisplay;
+					}
+				}
+			}
+			&__copy-text{
+				p {
+					line-height: 1;
+					margin-bottom: 0;
+					color: var(--clr-common-color7);
+				}
+			}
+		}
+	}
+}
+
+.bd-footer{
+	&__widget{
+		@media #{$xl, $lg, $md, $sm, $xs} {
+			padding: 0;
+		}
+		&1{
+			.bd-footer{
+				&__title{
+					h4 {
+						color: var(--clr-common-white);
+					}
+				}
+				&__link{
+					ul{
+						li{
+							a{
+								color: var(--clr-common-color7);
+							}
+							&:hover{
+								a{
+									color: var(--clr-common-white);
+								}
+							}
+						}
+					}
+				}
+				&__contact{
+					ul{
+						li{
+							a{
+								color: var(--clr-common-color7);
+							}
+							&:hover{
+								a{
+									color: var(--clr-common-white);
+								}
+							}
+						}
+					}
+				}
+			}
+			p{
+				color: var(--clr-common-color7);
+			}
+		}
+		&2{
+			.bd-footer{
+				&__title{
+					h4 {
+						color: var(--clr-common-heading);
+					}
+				}
+				&__link{
+					ul{
+						li{
+							a{
+								color: var(--clr-common-text);
+							}
+							&:hover{
+								a{
+									color: var(--clr-theme-1);
+								}
+							}
+						}
+					}
+				}
+				&__contact{
+					ul{
+						li{
+							a{
+								color: var(--clr-common-text);
+							}
+							&:hover{
+								a{
+									color: var(--clr-theme-1);
+								}
+							}
+						}
+					}
+				}
+			}
+			p{
+				color: var(--clr-common-text);
+			}
+		}
+	}
+}
+
+
+// Footer Bottom CSS 
+.bd-footer{
+	&__copy-text{
+		p {
+			line-height: 1;
+			margin-bottom: 0;
+			color: var(--clr-common-color7);
+			b{
+				color: var(--clr-common-red);
+				font-weight: 700;
+			}
+		}
+		&.two{
+			position: relative;
+			padding: 24px 0;
+			b {
+				font-weight: 700;
+				color: var(--clr-theme-1) !important;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: var(--clr-common-color14);
+			}
+		}
+	}
+	&__logo1 {
+		position: relative;
+		text-align: center;
+		margin-right: -33px;
+		img {
+			position: absolute;
+			bottom: -39px;
+			left: 0;
+			right: 30px;
+			margin: auto;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+		}
+	}
+	&-social{
+		ul {
+			display: flex;
+			justify-content: end;
+			gap: 10px;
+			@media #{$sm, $xs} {
+				justify-content: start;
+			}
+			li {
+				a {
+					width: 40px;
+					height: 40px;
+					display: block;
+					background: var(--clr-bg-black-3);
+					text-align: center;
+					display: block;
+					line-height: 42px;
+					@include border-radius(6px);
+					color: var(--clr-common-white);
+				 }
+				&:hover{
+					a{
+						background: var(--clr-common-red);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// Footer Two CSS Start Here 
+.bd-info-positon{
+	top: -50px;
+	left: 0;
+	width: 100%;
+}
+.bd-footer-2-padd {
+	@media #{$xl, $lg} {
+		padding-top: 145px;
+	}
+	@media #{$md} {
+		padding-top: 210px;
+	}
+	@media #{$sm, $xs} {
+		padding-top: 282px;
+	}
+	@media #{$xxs} {
+		padding-top: 350px;
+	}
+}
+
+
+// Footer Three CSS 
+.bd-footer-social.three{
+	ul{
+		li{
+			a{
+				background: transparent;
+				border: 2px solid var(--clr-common-red);
+				line-height: 38px;
+			}
+		    &:hover{
+				a{
+					background: var(--clr-common-white);
+					border: 2px solid var(--clr-theme-1);
+					color: var(--clr-theme-1);
+				}
+			}
+		}
+	}
+}
+.bd-footer__copy-text3 p {
+	margin-bottom: 0;
+	color: var(--clr-common-red-2);
+	b{
+		color: var(--clr-common-white);
+	}
+}
+
